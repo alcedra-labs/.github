@@ -13,3 +13,12 @@ Die Dokumente erteilen keine technischen Berechtigungen und starten keine Agente
 Dieses Repository ist öffentlich. Es enthält allgemeine Regeln; kundenspezifische Informationen und interne Betriebsdetails werden im jeweiligen Projekt geführt.
 
 Es sind in diesem Stand keine gemeinsamen Deployment-Workflows oder automatischen Richtlinien-Synchronisierungen eingerichtet.
+
+## Rollenprofile
+
+Die Vorlagen in [agents/](agents/) ergänzen die Baseline: planner, core-developer,
+platform-developer, infra-developer, test-engineer und reviewer. Sie beschreiben
+Aufgaben und erwartete Nachweise. Ein ausdrücklich eingerichteter Runner muss
+Profile laden, Ausführungsgrenzen durchsetzen und technische Rechte begrenzen.
+Andere Projekte installieren ihre Kopien ausdrücklich unter `.github/agents/`.
+Die Profile sind keine gestarteten Dienste oder GitHub-Identitäten.
